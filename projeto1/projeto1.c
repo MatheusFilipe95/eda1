@@ -59,9 +59,7 @@ resultado = fneuronio(ENTRADAS, PESOS, lim, 10);
 
 if(*resultado == 1){
     printf("Neurônio ativado!\n");
-}
-
-else{
+}else{
     printf("Neurônio inibido!");
 }
 
