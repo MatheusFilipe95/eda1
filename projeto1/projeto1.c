@@ -7,11 +7,11 @@ Integrantes:
 140146156 - João Victor Lustosa Braz
 */
 
-int * fneuronio(int *ENTRADAS, int *PESOS, int lim, int max){
+int * fneuronio(int *ENTRADAS, int *PESOS, int lim, int maximo){
 int SOMAP = 0;
 int *saida = &SOMAP;
 
-for(int i = 0; i < max; i++){
+for(int i = 0; i < maximo; i++){
    SOMAP += ENTRADAS[i] * PESOS[i];
 }
 
