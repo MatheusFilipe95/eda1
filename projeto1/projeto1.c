@@ -5,6 +5,7 @@
 Integrantes:
 140155350 - Matheus Filipe Faria Alves de Andrade
 140146156 - João Victor Lustosa Braz
+140154981 - Mateus Roriz
 */
 
 int * fneuronio(int *ENTRADAS, int *PESOS, int lim, int maximo){
