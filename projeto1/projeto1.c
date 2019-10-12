@@ -5,10 +5,10 @@
 Integrantes:
 140155350 - Matheus Filipe Faria Alves de Andrade
 140146156 - João Victor Lustosa Braz
-140154981 - Mateus Roriz
+140154981 - Mateus R
 */
 
-int * fneuronio(int *ENTRADAS, int *PESOS, int lim, int maximo){
+int * fneuronio(int *ENTRADAS, int *PESOS, int limiar, int maximo){
 int SOMAP = 0;
 int *saida = &SOMAP;
 
@@ -16,7 +16,7 @@ for(int i = 0; i < maximo; i++){
    SOMAP += ENTRADAS[i] * PESOS[i];
 }
 
-if(SOMAP > lim){
+if(SOMAP > limiar){
     *saida = 1;
 }else{
     *saida = 0;
@@ -28,7 +28,7 @@ return saida;
 int main(){
 
 int *ENTRADAS, *PESOS, *resultado;
-int lim, i;
+int limiar, i;
 
 ENTRADAS = (int *)malloc(10 * sizeof(int));
 if(ENTRADAS == NULL){
@@ -53,10 +53,10 @@ for(i = 0; i < 10; i++){
 }
 
 printf("Insira o valor limiar: ");
-scanf("%d", &lim);
+scanf("%d", &limiar);
 printf("\n");
 
-resultado = fneuronio(ENTRADAS, PESOS, lim, 10);
+resultado = fneuronio(ENTRADAS, PESOS, limiar, 10);
 
 if(*resultado == 1){
     printf("Neurônio ativado!\n");
